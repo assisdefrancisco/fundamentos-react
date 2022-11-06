@@ -1,5 +1,7 @@
+import React from 'react'
 import ReactDOM  from 'react-dom'
 
-ReactDOM.render('Olá React!!!', document.getElementById('root'))
-
-
+ReactDOM.render(
+    <h1>Olá React!</h1>, 
+    document.getElementById('root')
+)
