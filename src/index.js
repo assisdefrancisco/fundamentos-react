@@ -1,12 +1,11 @@
 import React from 'react'
 import ReactDOM  from 'react-dom'
 import './index.css'
-import Comp from './components/basicos/Primeiro'
+import Primeiro from './components/basicos/Primeiro'
 
 ReactDOM.render(
     <div>
-        <Comp></Comp>
-        <Comp></Comp>
+        <Primeiro></Primeiro>        
     </div>, 
     document.getElementById('root')
 )
