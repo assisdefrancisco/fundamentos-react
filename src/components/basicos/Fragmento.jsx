@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 export default function Fragmento(props) {
     return (
-        <React.Fragment>
+        <Fragment>
             <h2>Fragmento</h2>
             <p>Cuidado com esse erro</p>
-        </React.Fragment>
+        </Fragment>
     )
 }
