@@ -8,8 +8,9 @@ ReactDOM.render(
     <div>
         <Primeiro></Primeiro>
         <ComParametro 
-            titulo="Segundo Componente 2" 
-            subtitulo="Componente com parametro 2" />
+            titulo="Situacao do Aluno" 
+            aluno="Pedro" 
+            nota={9.3} />
     </div>, 
     document.getElementById('root')
 )
