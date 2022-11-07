@@ -15,7 +15,7 @@ export default _ =>
     <div className="app">
         <h1>Fundamentos React 2</h1>
         <div className="cards">
-            <Card titulo="#7 - Desafio Repetição" color="#FF4C65">
+            <Card titulo="#7 - Desafio Repetição" color="#3A9AD9">
                 <TabelaProdutos />
             </Card>
             <Card titulo="#6 - Repetição" color="#FF4C65">
