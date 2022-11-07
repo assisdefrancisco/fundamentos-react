@@ -17,16 +17,12 @@ import UsuarioInfo from './components/condicional/UsuarioInfo'
 export default _ =>
     <div className="app">
         <h1>Fundamentos React 2</h1>
-        <div className="cards">
-            <Card titulo="#9 - Renderização condicional" color="#982395">
-                <If test={true}>
-                    <span> Ana </span>
-                </If>
-            </Card>
+        <div className="cards">            
             <Card titulo="#8 - Renderização condicional" color="#982395">
                 <ParOuImpar numero={21} />
-                <UsuarioInfo usuario={{ nome: 'Fernando' }} />
-                <UsuarioInfo usuario={{ email: 'fernando@mail.com' }} />
+                {/* <UsuarioInfo usuario={{ nome: 'Fernando' }} /> */}
+                <UsuarioInfo />
+                {/* <UsuarioInfo usuario={{ email: 'fernando@mail.com' }} /> */}
             </Card>
             <Card titulo="#7 - Desafio Repetição" color="#3A9AD9">
                 <TabelaProdutos />
