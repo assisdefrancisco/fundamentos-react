@@ -1,11 +1,13 @@
 import React from 'react'
 
 export default props => {
+    const callback = props.quandoClicar;
+
     return (
         <div>
             <div>Filho</div>
             <button onClick={
-                (e) => props.quandoClicar('João', 53, true)
+                _ => callback('João', 53, true)
             }>Fornecer INformações</button>
         </div>
     )
