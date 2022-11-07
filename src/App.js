@@ -11,13 +11,22 @@ import FamiliaMembro from './components/basicos/FamiliaMembro'
 import ListaAlunos from './components/repeticao/ListaAlunos'
 import TabelaProdutos from './components/repeticao/TabelaProdutos'
 import ParOuImpar from './components/condicional/ParOuImpar'
+import If from './components/condicional/If'
+import UsuarioInfo from './components/condicional/UsuarioInfo'
 
 export default _ =>
     <div className="app">
         <h1>Fundamentos React 2</h1>
         <div className="cards">
+            <Card titulo="#9 - Renderização condicional" color="#982395">
+                <If test={true}>
+                    <span> Ana </span>
+                </If>
+            </Card>
             <Card titulo="#8 - Renderização condicional" color="#982395">
                 <ParOuImpar numero={21} />
+                <UsuarioInfo usuario={{ nome: 'Fernando' }} />
+                <UsuarioInfo usuario={{ email: 'fernando@mail.com' }} />
             </Card>
             <Card titulo="#7 - Desafio Repetição" color="#3A9AD9">
                 <TabelaProdutos />
