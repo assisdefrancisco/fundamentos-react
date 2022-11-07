@@ -13,11 +13,15 @@ import TabelaProdutos from './components/repeticao/TabelaProdutos'
 import ParOuImpar from './components/condicional/ParOuImpar'
 import If from './components/condicional/If'
 import UsuarioInfo from './components/condicional/UsuarioInfo'
+import DiretaPai from './components/comunicacao/DiretaPai'
 
 export default _ =>
     <div className="app">
         <h1>Fundamentos React 2</h1>
         <div className="cards">            
+            <Card titulo="#9 - Comunicação Direta" color="#59323C">
+                <DiretaPai />
+            </Card>
             <Card titulo="#8 - Renderização condicional" color="#982395">
                 <ParOuImpar numero={21} />
                 {/* <UsuarioInfo usuario={{ nome: 'Fernando' }} /> */}
