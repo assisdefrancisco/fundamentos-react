@@ -5,14 +5,18 @@ import Primeiro from './components/basicos/Primeiro'
 import ComParametro from './components/basicos/ComParametro'
 import Fragmento from './components/basicos/Fragmento'
 import Aleatorio from './components/basicos/Aleatorio'
-import Card from './components/basicos/layout/Card'
+import Card from './components/layout/Card'
 import Familia from './components/basicos/Familia'
 import FamiliaMembro from './components/basicos/FamiliaMembro'
+import ListaAlunos from './components/repeticao/ListaAlunos'
 
 export default _ =>
     <div className="app">
         <h1>Fundamentos React 2</h1>
         <div className="cards">
+            <Card titulo="#6 - Repetição" color="#FF4C65">
+                <ListaAlunos ></ListaAlunos>
+            </Card>
             <Card titulo="#05 - Componente com Filhos" color="#00C8F8">
                 <Familia sobrenome="Ferreira">
                     <FamiliaMembro nome="Pedro" />
