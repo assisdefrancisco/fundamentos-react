@@ -1,14 +1,15 @@
 import React from 'react';
 import produtos from '../../data/produtos'
+import './TabelaProdutos.css'
 
 export default props => {
 
     return (
-        <div style={{
+        <div className='TabelaProdutos' style={{
             display: 'flex',
             justifyContent: 'center'
         }}>
-            <table border="1">
+            <table>
                 <thead>
                     <tr>
                         <th>#ID</th>
@@ -17,8 +18,8 @@ export default props => {
                     </tr>
                 </thead>
                 <tbody>
-                    {produtos.map(produto => (
-                        <tr>
+                    {produtos.map( (produto, i) => (
+                        <tr key={produto.id} className={ i % 2 == 0 ? 'Par' : 'Impar'}>
                             <td>{produto.id}</td>
                             <td>{produto.nome}</td>
                             {/* <td>{Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(produto.preco)}</td> */}
