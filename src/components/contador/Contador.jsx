@@ -1,21 +1,40 @@
 import React, { Component } from 'react'
+import './Contador.css'
 
 export default class Contador extends Component {
-    constructor(props) {
-        super(props)
-
-        this.state = {
-            numero: props.numeroInicial
-        }
+    state = {
+        numero: this.props.numeroInicial || 0,
+        passo: this.props.numeroInicial || 5
     }
     
+    inc = () => {
+        this.setState({ numero: this.state.numero + this.state.passo })
+    }
 
+    dec = () => {
+        this.setState({ numero: this.state.numero - this.state.passo })
+    }
+
+    setPasso = (e) => {
+        this.setState({
+            passo: +e.target.value
+        })
+    }
 
     render() {
         return (
-            <div>
+            <div className='Contador'>
                 <h2>Contador</h2>
+                <h3>{this.state.numero}</h3>
                 <p>Valor Inicial: {this.state.numero}</p>
+
+                <div>
+                    <label htmlFor="passoInicial">Passo: </label>
+                    <input type="number" value={this.state.passo} onChange={this.setPasso} />
+                </div>
+
+                <button onClick={this.inc}>+</button>
+                <button onClick={this.dec}>-</button>
             </div>
         )
     }
